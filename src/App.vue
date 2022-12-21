@@ -1,30 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <nav-layout v-if="this.$route.name !== 'login' && this.$route.name !== 'assistance-confirm'"/>
+  <div v-else><router-view/></div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import "@/assets/vendors/feather/feather.css";
+@import "@/assets/vendors/ti-icons/css/themify-icons.css";
+@import "@/assets/vendors/css/vendor.bundle.base.css";
+@import "@/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css";
+@import "@/assets/vendors/ti-icons/css/themify-icons.css";
+@import "@/assets/js/select.dataTables.min.css";
+@import "@/assets/css/vertical-layout-light/style.css";
 </style>
+
+<script>
+import NavLayout from "@/components/NavLayout";
+
+export default {
+  components: {NavLayout},
+
+}
+</script>
