@@ -34,7 +34,6 @@
                     <button type="button"
                             data-toggle="modal"
                             data-target="#modal-confirm"
-                            v-if="invitation.confirmo_invitacion === 'NO'"
                             @click="guestConfirm = invitation"
                             class="btn btn-social-icon btn-outline-success"> <i class='bx bx-check-double' /></button>
                   </div>
