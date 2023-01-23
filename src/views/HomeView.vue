@@ -80,7 +80,7 @@ export default {
           })
     },
     copyLink(cod){
-      const link = `${location?.host}/confirmar-asistencia/${md5(cod)}`;
+      const link = `${window.location.origin}/confirmar-asistencia/${md5(cod)}`;
       if(window.isSecureContext){
         navigator?.clipboard?.writeText(link);
       }else {

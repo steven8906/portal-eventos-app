@@ -55,29 +55,33 @@
           </div>
           <div class="row justify-content-center w-100 align-items-center">
             <div class="col-sm-12">&nbsp;</div>
-            <div class="col-sm-12 col-md-6">
-              <div class="d-flex justify-content-around" style="gap: 2rem">
-                <div class="d-flex align-items-center" style="gap: 1rem">
-                  <div class="p-3 rounded-circle" style="background-color: #D5FFF0">
-                    <i class='bx bx-calendar-check' style="font-size: 2rem; color: #00B073"></i>
-                  </div>
-                  <div class="d-flex flex-column justify-content-center">
-                    <p class="card-title" style="margin: 0!important;">Fecha del evento</p>
-                    <p class="text-muted"><b>{{ event.fecha }}</b></p>
+            <div class="col-sm-12 col-md-8">
+              <div class="row justify-content-between" style="gap: 2rem">
+                <div class="col-sm-12 col-md-5 p-0">
+                  <div class="d-flex align-items-center" style="gap: .5rem">
+                    <div class="p-3 rounded-circle" style="background-color: #D5FFF0">
+                      <i class='bx bx-calendar-check' style="font-size: 2rem; color: #00B073"></i>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                      <p class="card-title" style="margin: 0!important;">Fecha del evento</p>
+                      <p class="text-muted"><b>{{ event?.fecha }}</b></p>
+                    </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-center" style="gap: 1rem">
-                  <div class="p-3 rounded-circle" style="background-color: #D5FFF0">
-                    <i class='bx bx-info-circle' style="font-size: 2rem; color: #00B073"></i>
-                  </div>
-                  <div class="d-flex flex-column justify-content-center">
-                    <p class="card-title" style="margin: 0!important;">Importante</p>
-                    <p class="text-muted"><b>{{ event.obs }}</b></p>
+                <div class="col-sm-12 col-md-5 p-0">
+                  <div class="d-flex align-items-center" style="gap: .5rem">
+                    <div class="p-3 rounded-circle" style="background-color: #D5FFF0">
+                      <i class='bx bx-info-circle' style="font-size: 2rem; color: #00B073"></i>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                      <p class="card-title" style="margin: 0!important;">Importante</p>
+                      <p class="text-muted"><b>{{ event?.obs }}</b></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-4 mt-sm-3">
               <img src="../assets/images/invitacion.webp" alt="" class="d-block w-50 m-auto"/>
             </div>
           </div>
